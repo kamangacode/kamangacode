@@ -101,6 +101,10 @@ L'IA accélère la production. Elle ne remplace pas le jugement. Les équipes qu
 ![Scrum](https://img.shields.io/badge/Scrum-1A1A1A?style=for-the-badge)
 ![SAFe](https://img.shields.io/badge/SAFe-1A1A1A?style=for-the-badge)
 
+### Conformité et réglementation
+
+![RGPD](https://img.shields.io/badge/RGPD-1E3A8A?style=for-the-badge)
+
 ---
 
 ## Ce que je crois, sans compromis
