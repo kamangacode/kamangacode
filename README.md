@@ -179,6 +179,6 @@ Je publie régulièrement sur [kamanga.fr/blog](https://kamanga.fr/blog) : retou
 
 **On peut parler.** Pas de pitch. Pas de vente. 30 minutes pour poser les bonnes questions et identifier une ou deux pistes.
 
-[**→ Réserver un échange**](https://kamanga.fr) · [**→ Me suivre sur LinkedIn**](https://linkedin.com/in/kamangacode)
+[**→ Réserver un échange**](https://app.kamanga.fr/forms/discovery-call) · [**→ Me suivre sur LinkedIn**](https://linkedin.com/in/kamangacode)
 
 </div>
