@@ -130,26 +130,19 @@ Application SaaS pour coachs professionnels (Next.js 16, NestJS 11, Prisma, arch
 
 ---
 
-## Certifications
+## Certification et formation
 
-| Année | Certification |
-|------:|---------------|
-| 2023 | Certification de Manager (Ecole 109) |
-| 2021 | Certified Scrum Master (Scrum Alliance) |
-| 2021 | Coach Praticien (Coach Académie, Paris) |
-
----
-
-## Formation
-
-| Année | Diplôme |
-|------:|---------|
-| 2023 | **Executive MBA** Management et Entrepreneuriat IT (Epitech Executive, Paris) |
-| 2023 | **Formation Direction des Systèmes d'Information** (IB Cegos, Paris) : plan directeur, transformation numérique, gouvernance, performance financière, gestion des risques, méthodes agiles |
-| 2008 | **Master 2** Manager en ingénierie informatique, réseaux et télécoms, option Système d'information bancaire (M2IRT, ITIN / CCI Versailles) |
-| 2007 | **Master 1** Chargé de projets informatique, option Ingénierie des systèmes d'information (ITIN) |
-| 2004 | **BTS Informatique de Gestion**, option Administrateur de réseau local d'entreprise (E.C.T.E.I, Groupe ECE, Montreuil) |
-| 2002 | **Baccalauréat Scientifique**, option Sciences de l'ingénieur (Lycée La Tourelle, Sarcelles) |
+| Année | Type | Intitulé |
+|------:|------|----------|
+| 2023 | Certification | Certification de Manager (Ecole 109) |
+| 2023 | Formation | **Executive MBA** Management et Entrepreneuriat IT (Epitech Executive, Paris) |
+| 2023 | Formation | **Direction des Systèmes d'Information** (IB Cegos, Paris) : plan directeur, transformation numérique, gouvernance, performance financière, gestion des risques, méthodes agiles |
+| 2021 | Certification | Certified Scrum Master (Scrum Alliance) |
+| 2021 | Certification | Coach Praticien (Coach Académie, Paris) |
+| 2008 | Formation | **Master 2** Manager en ingénierie informatique, réseaux et télécoms, option Système d'information bancaire (M2IRT, ITIN / CCI Versailles) |
+| 2007 | Formation | **Master 1** Chargé de projets informatique, option Ingénierie des systèmes d'information (ITIN) |
+| 2004 | Formation | **BTS Informatique de Gestion**, option Administrateur de réseau local d'entreprise (E.C.T.E.I, Groupe ECE, Montreuil) |
+| 2002 | Formation | **Baccalauréat Scientifique**, option Sciences de l'ingénieur (Lycée La Tourelle, Sarcelles) |
 
 ---
 
