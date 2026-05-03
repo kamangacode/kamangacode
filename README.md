@@ -115,7 +115,16 @@ L'IA accélère la production. Elle ne remplace pas le jugement. Les équipes qu
 
 ## Projets en cours
 
-- **CRM Coaching** : application SaaS pour coachs professionnels (Next.js 16, NestJS 11, Prisma, architecture hexagonale, IA intégrée). 100% codée en Craft IA.
+### CRM Coaching
+
+Application SaaS pour coachs professionnels (Next.js 16, NestJS 11, Prisma, architecture hexagonale, IA intégrée). 100% codée en Craft IA.
+
+<p align="center">
+  <img src="ressources/crm-cosching-lead.png" alt="Aperçu fiche lead CRM Coaching" width="800" />
+</p>
+
+### Autres
+
 - **Blog kamanga.fr** : vulgarisation du software craftsmanship et du Craft IA.
 - **Chaîne YouTube [@kamangacode](https://youtube.com/@kamangacode)** : tutos, retours d'expérience, dissection des pratiques d'ingénierie modernes.
 
