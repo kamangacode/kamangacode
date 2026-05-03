@@ -125,7 +125,7 @@ Application SaaS pour coachs professionnels (Next.js 16, NestJS 11, Prisma, arch
 
 ### Autres
 
-- **Blog kamanga.fr** : vulgarisation du software craftsmanship et du Craft IA.
+- **[Blog kamanga.fr](https://kamanga.fr/blog)** : vulgarisation du software craftsmanship et du Craft IA.
 - **Chaîne YouTube [@kamangacode](https://youtube.com/@kamangacode)** : tutos, retours d'expérience, dissection des pratiques d'ingénierie modernes.
 
 ---
