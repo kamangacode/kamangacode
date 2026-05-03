@@ -168,8 +168,10 @@ Je publie régulièrement sur [kamanga.fr/blog](https://kamanga.fr/blog) : retou
 
 <div align="center">
 
-![Kamanga's GitHub stats](https://github-readme-stats.vercel.app/api?username=kamangacode&show_icons=true&theme=tokyonight&hide_border=true)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=kamangacode&layout=compact&theme=tokyonight&hide_border=true)
+![Profile views](https://komarev.com/ghpvc/?username=kamangacode&style=for-the-badge&color=1A1A2E&label=PROFILE+VIEWS)
+![Followers](https://img.shields.io/github/followers/kamangacode?style=for-the-badge&color=1A1A2E&label=FOLLOWERS)
+![Stars](https://img.shields.io/github/stars/kamangacode?style=for-the-badge&color=1A1A2E&label=STARS&affiliations=OWNER)
+![Repos](https://img.shields.io/badge/dynamic/json?style=for-the-badge&color=1A1A2E&label=PUBLIC%20REPOS&query=public_repos&url=https%3A%2F%2Fapi.github.com%2Fusers%2Fkamangacode)
 
 </div>
 
