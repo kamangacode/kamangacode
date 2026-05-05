@@ -22,9 +22,9 @@ J'aide les équipes techniques et leurs managers à **reprendre la maîtrise de 
 
 Aujourd'hui, j'interviens à trois niveaux :
 
-- **CTO Fractionné** : pilotage IT temps partagé pour TPE/PME, audits, gouvernance, recrutement
-- **Coach Software Craftsmanship** : transformation de la culture d'ingénierie (Clean Architecture, DDD, TDD, pair programming, qualité logicielle)
-- **Développeur Full Stack** : je continue de coder, parce que le craft se pratique avant de s'enseigner
+- **[CTO Fractionné](https://kamanga.fr/cto-on-demand)** : pilotage IT temps partagé pour TPE/PME, audits, gouvernance, recrutement
+- **[Coach Software Craftsmanship](https://kamanga.fr/coaching-craft)** : transformation de la culture d'ingénierie (Clean Architecture, DDD, TDD, pair programming, qualité logicielle)
+- **[Développeur Full Stack](https://kamanga.fr/studio-dev)** : je continue de coder, parce que le craft se pratique avant de s'enseigner
 
 ### Le Craft IA, ma conviction actuelle
 
