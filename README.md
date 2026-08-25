@@ -2,15 +2,17 @@
 
 # Hervé "Kamanga" Muludiki
 
-### CTO Fractionné · Coach Software Craftsmanship · Développeur Full Stack
+### Software Craftsman · Coach Craft + IA · Développeur Full Stack
 
-*Transformer le code en levier business, à l'ère de l'IA.*
+*Reprendre la maîtrise de son code, à l'ère de l'IA.*
 
 [![Website](https://img.shields.io/badge/Website-kamanga.fr-0A0A0A?style=for-the-badge&logo=safari&logoColor=white)](https://kamanga.fr)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-kamangacode-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/kamangacode)
 [![YouTube](https://img.shields.io/badge/YouTube-@kamangacode-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/@kamangacode)
 [![X](https://img.shields.io/badge/X-@kamangacode-000000?style=for-the-badge&logo=x&logoColor=white)](https://twitter.com/kamangacode)
 [![Email](https://img.shields.io/badge/Email-herve@kamanga.fr-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:herve@kamanga.fr)
+
+**🇫🇷 Français** · [🇬🇧 English](README.en.md)
 
 </div>
 
@@ -20,17 +22,86 @@
 
 J'aide les équipes techniques et leurs managers à **reprendre la maîtrise de leurs systèmes**. 25 ans de terrain comme tech lead, CTO fractionné et coach technique au sein de grands comptes (BNP Paribas, Crédit Agricole, Canal+, Agirc-Arrco, Société Générale, JCDecaux, Air France).
 
-Aujourd'hui, j'interviens à trois niveaux :
+Aujourd'hui, mon activité est centrée sur un seul axe :
 
-- **CTO Fractionné** : pilotage IT temps partagé pour TPE/PME, audits, gouvernance, recrutement
-- **Coach Software Craftsmanship** : transformation de la culture d'ingénierie (Clean Architecture, DDD, TDD, pair programming, qualité logicielle)
-- **Développeur Full Stack** : je continue de coder, parce que le craft se pratique avant de s'enseigner
+- **[Coach Craft + IA](https://www.kamanga.fr/)** : transformation de la culture d'ingénierie (Clean Architecture, DDD, TDD, pair programming, qualité logicielle) et gouvernance de l'IA dans le cycle de dev (cadre commun, sécurité du code généré, coût maîtrisé)
 
 ### Le Craft IA, ma conviction actuelle
 
 > *L'art d'utiliser l'IA pour construire des applications bien faites, avec un budget extrêmement maîtrisé.*
 
 L'IA accélère la production. Elle ne remplace pas le jugement. Les équipes qui sortiront gagnantes de cette transition seront celles qui comprennent ce qu'elles construisent. C'est exactement sur ce terrain que j'interviens.
+
+---
+
+## Projets en cours
+
+### Conduit Full Stack
+
+Un vrai projet full-stack TypeScript, tenu comme un projet de production : monorepo `api` +
+`web` + `shared` en NestJS, Next.js et Zod, qui implémente la spec
+[RealWorld](https://realworld-docs.netlify.app/) (nom de code *Conduit*, un clone de Medium
+avec articles, commentaires, favoris et suivi d'auteurs).
+
+[![conduit-fullstack](https://img.shields.io/badge/GitHub-conduit--fullstack-0A0A0A?style=for-the-badge&logo=github&logoColor=white)](https://github.com/kamangacode/conduit-fullstack)
+
+**L'enjeu.** Ce qui sépare un projet qui tient dix ans d'un projet ingérable à 18 mois, ce
+n'est presque jamais le talent des équipes : c'est le cadre posé dès le premier jour.
+Problème, ce cadre se raconte mal en slides. Il se lit dans les fichiers.
+
+**Le pourquoi.** Rendre ce cadre concret et vérifiable. Le périmètre fonctionnel étant figé
+par la spec RealWorld, tout le *quoi* est déjà décidé : reste le *comment*, et c'est
+exactement ce que ce dépôt expose. C'est aussi l'implémentation exécutable du
+[Référentiel Craft](https://www.kamanga.fr/referentiel-craft), mes 25 ans de pratique
+condensés en 100 pratiques sur 21 phases.
+
+**Ma méthodologie.** Chaque incrément suit le même trajet, et laisse une trace à chaque
+étape : cadrer (PRD, hors périmètre explicite), spécifier (exigences versionnées avec leurs
+critères d'acceptation), décider (ADR immuables), implémenter (le code et ses tests dans la
+même unité, sur une branche issue de `staging`), relire et livrer (review en Conventional
+Comments, promotion `staging` vers `main`). Un travail interrompu se reprend sans
+reconstituer le contexte de tête.
+
+**Ce que je montre dans ce projet :**
+
+- **Architecture hexagonale** : ports dans le domaine, adapters dans l'infrastructure, un domaine pur sans un seul import de NestJS ou de Prisma.
+- **DDD et Clean Architecture** : bounded contexts, aggregate root immuable, value objects validés, règle de dépendance tenue sur 4 couches.
+- **Un modèle partagé unique** : le schéma Zod est l'unique définition, le type TypeScript en est inféré. La cohérence front/back devient une dépendance de compilation, pas un contrat à synchroniser.
+- **Stratégie de tests** : suite de conformité RealWorld vendorée au SHA (128 tests Playwright, jamais éditée), couverture exigée par couche, garde-fou anti run vert et creux.
+- **Qualité outillée** : Biome, complexité cognitive bloquante en CI, dependency-cruiser sur les frontières hexagonales, knip sur le code mort.
+- **Requirements as code** : exigences versionnées, frontmatter validé par schéma, matrice de traçabilité exigences vers tests générée en CI.
+- **Sécurité by design** : validation d'environnement fail-fast au boot, anti-IDOR filtré en SQL, autorité serveur sur l'auteur, secrets hors dépôt, modèle de menace documenté.
+- **Documentation as code** : ADR immuables avec gate automatique, guides, standards, tout en Markdown versionné.
+- **Livraison** : Conventional Commits, flux `feature` vers `staging` vers `main` par promotion, merge commit jamais squash.
+- **Workflow agentique et SDLC** : le cycle outillé que j'utilise au quotidien, sous gates humaines.
+
+> **Ce dépôt est fait pour être lu, pas seulement cloné.** Chaque garde-fou est un vrai
+> fichier commenté, lisible sans contexte additionnel. Ouvre-en un au hasard.
+>
+> [**→ Explorer conduit-fullstack**](https://github.com/kamangacode/conduit-fullstack) · [**→ Découvrir Le Référentiel Craft**](https://www.kamanga.fr/referentiel-craft)
+
+### CRM Coaching
+
+Application SaaS pour coachs professionnels (Next.js 16, NestJS 11, Prisma, architecture hexagonale, IA intégrée). 100% codée en Craft IA.
+
+<p align="center">
+  <img src="ressources/crm-cosching-lead.png" alt="Aperçu fiche lead CRM Coaching" width="800" />
+</p>
+
+### Autres
+
+- **[Blog kamanga.fr](https://kamanga.fr/blog)** : vulgarisation du software craftsmanship et du Craft IA.
+- **Chaîne YouTube [@kamangacode](https://youtube.com/@kamangacode)** : tutos, retours d'expérience, dissection des pratiques d'ingénierie modernes.
+
+---
+
+## Ce que je crois, sans compromis
+
+- La **qualité logicielle** est une décision business, pas une option technique.
+- La **dette technique** est une dette financière. Elle a un coût réel, mesurable.
+- Le **craftsmanship** est un garde-fou, pas un dogme.
+- L'**IA** augmente l'urgence du jugement humain, elle ne l'élimine pas.
+- Une bonne **transformation** rend les équipes autonomes, pas dépendantes du consultant.
 
 ---
 
@@ -107,33 +178,6 @@ L'IA accélère la production. Elle ne remplace pas le jugement. Les équipes qu
 
 ---
 
-## Ce que je crois, sans compromis
-
-- La **qualité logicielle** est une décision business, pas une option technique.
-- La **dette technique** est une dette financière. Elle a un coût réel, mesurable.
-- Le **craftsmanship** est un garde-fou, pas un dogme.
-- L'**IA** augmente l'urgence du jugement humain, elle ne l'élimine pas.
-- Une bonne **transformation** rend les équipes autonomes, pas dépendantes du consultant.
-
----
-
-## Projets en cours
-
-### CRM Coaching
-
-Application SaaS pour coachs professionnels (Next.js 16, NestJS 11, Prisma, architecture hexagonale, IA intégrée). 100% codée en Craft IA.
-
-<p align="center">
-  <img src="ressources/crm-cosching-lead.png" alt="Aperçu fiche lead CRM Coaching" width="800" />
-</p>
-
-### Autres
-
-- **[Blog kamanga.fr](https://kamanga.fr/blog)** : vulgarisation du software craftsmanship et du Craft IA.
-- **Chaîne YouTube [@kamangacode](https://youtube.com/@kamangacode)** : tutos, retours d'expérience, dissection des pratiques d'ingénierie modernes.
-
----
-
 ## Certification et formation
 
 | Année | Type | Intitulé |
@@ -156,13 +200,14 @@ Je publie régulièrement sur [kamanga.fr/blog](https://kamanga.fr/blog) : retou
 
 | Date | Catégorie | Article |
 |------|-----------|---------|
-| 2026-03-27 | Dette technique | [L'ingénierie logicielle comme avantage concurrentiel durable](https://kamanga.fr/fr/dette-technique/ingenierie-logicielle-avantage-concurrentiel) |
-| 2026-03-25 | Architecture | [Database per Service : quand ça vaut vraiment la complexité](https://kamanga.fr/fr/architecture-craft/database-per-service-microservices) |
-| 2026-03-23 | Management | [Délégation technique : la matrice par niveau de séniorité](https://kamanga.fr/fr/management/delegation-technique-confiance) |
-| 2026-03-20 | IA | [IA en code review : retour d'expérience après 6 mois](https://kamanga.fr/fr/intelligence-artificielle/ia-code-review-retour-experience) |
-| 2026-03-18 | Agile | [Limiter le Work In Progress : le levier le plus sous-estimé](https://kamanga.fr/fr/pratiques-agiles/reduire-work-in-progress-velocite) |
-| 2026-03-16 | Dette technique | [Pair programming : ROI réel et conditions de succès](https://kamanga.fr/fr/dette-technique/pair-programming-roi-conditions) |
-| 2026-03-13 | Architecture | [Dependency Inversion Principle : 3 exemples concrets](https://kamanga.fr/fr/architecture-craft/dependency-inversion-pratique) |
+| 2026-06-17 | Dette technique | [La boîte à outils craft qui empêche une app de mourir à 18 mois](https://kamanga.fr/fr/dette-technique/boite-a-outils-craft-app-durable) |
+| 2026-06-10 | Dette technique | [Complexité cognitive : le verrou qui empêche la dette de revenir](https://kamanga.fr/fr/dette-technique/verrou-complexite-cognitive-code-ia) |
+| 2026-05-25 | Dette technique | [5 raisons pour lesquelles votre app meurt à 18 mois](https://kamanga.fr/fr/dette-technique/5-raisons-app-meurt-18-mois) |
+| 2026-05-19 | IA | [À qui appartient le bug en prod : toi ou Claude ?](https://kamanga.fr/fr/intelligence-artificielle/a-qui-appartient-le-bug-ia) |
+| 2026-05-16 | IA | [10x plus de PR ≠ 10x plus de valeur livrée : les 4 métriques qui mentent](https://kamanga.fr/fr/intelligence-artificielle/illusion-productivite-10x-pr) |
+| 2026-05-13 | IA | [Le code Claude « qui marche » est souvent celui qui coûte le plus cher](https://kamanga.fr/fr/intelligence-artificielle/faux-ami-code-claude-coute-cher) |
+| 2026-05-10 | IA | [Tous les tests sont verts, et 3 jours plus tard ça plante en prod](https://kamanga.fr/fr/intelligence-artificielle/code-claude-tests-passent-plante-prod) |
+| 2026-05-01 | Dette technique | [Dependabot : configurer son coéquipier silencieux contre la dette](https://kamanga.fr/fr/dette-technique/dependabot-craft-gestion-dependances) |
 
 [**→ Voir tous les articles**](https://kamanga.fr/blog)
 
