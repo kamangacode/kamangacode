@@ -1,0 +1,11 @@
+# IntelliJ IDEA / JetBrains IDEs
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+.idea_modules/
+
+# OS
+.DS_Store
+Thumbs.db
